@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0b" />
+  <title>Sneha Chandana Reddy · Software Developer · Brisbane</title>
+  <meta name="description" content="Portfolio of Kothakapu Sneha Chandana Reddy. Software Developer based in Brisbane, Australia. Master's in IT, building web and systems software." />
+
+  <!-- Fonts: editorial serif + clean sans + mono accents -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Scroll progress indicator -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">
+        <span class="nav__mark">KSCR</span>
+        <span class="nav__name">Sneha Chandana Reddy</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header id="top" class="hero">
+    <div class="hero__container">
+      <div class="hero__meta">
+        <span class="hero__dot"></span>
+        <span>Available for opportunities · Brisbane, Australia</span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="hero__line">Kothakapu Sneha</span>
+        <span class="hero__line hero__line--accent">Chandana Reddy</span>
+      </h1>
+
+      <p class="hero__subtitle">
+        Software Developer with a Master's in Information Technology,
+        building web and systems software, grounded in three years of
+        production experience.
+      </p>
+
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="resume.pdf" class="btn btn--ghost" download>Download Resume</a>
+        <a href="#contact" class="btn btn--text">Get in Touch &rsaquo;</a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num" data-count="3" data-suffix="+">0</span>
+          <span class="stat__label">Years in IT</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="2">0</span>
+          <span class="stat__label">Government Clients Served</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__num">01 / About</span>
+        <h2 class="section__title">My Story</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <p class="about__lead">
+            From systems administration to building software, working my way
+            into development from Brisbane.
+          </p>
+          <p>
+            My path into tech started with a Bachelor's in Computer Science
+            at B.V. Raju Institute of Technology in India. After graduating I
+            wanted to go deeper, so in 2021 I moved to Brisbane to pursue a
+            Master of Information Technology at Griffith University. Australia
+            has been home ever since.
+          </p>
+          <p>
+            Since finishing my Master's I've been on the operational side of
+            technology, currently supporting frontline officers across the
+            Queensland Police Service and Queensland Ambulance Service. Three
+            years close to live production systems has shaped how I think
+            about software. I've watched bugs surface at the worst possible
+            moments and learned how much a clear error message or a sensible
+            default is worth.
+          </p>
+          <p>
+            Now I'm pivoting back toward writing code. I build small projects
+            in JavaScript and Java in my free time and I'm sharpening my
+            fundamentals so I can move into a developer role full-time.
+          </p>
+          <p>
+            Outside of work I enjoy long walks around Brisbane, cooking the
+            food I grew up on, and the occasional weekend road trip up the
+            coast.
+          </p>
+        </div>
+
+        <aside class="about__sidebar">
+          <div class="about__photo">
+            <img src="photo.jpg" alt="Sneha Chandana Reddy"
+                 onerror="this.parentElement.classList.add('about__photo--empty'); this.remove();" />
+          </div>
+
+          <div class="about__card">
+            <h3>At a Glance</h3>
+            <dl>
+              <dt>Location</dt>
+              <dd>Brisbane, Queensland</dd>
+              <dt>Work Rights</dt>
+              <dd>Subclass 485 · Full rights until Feb 2029</dd>
+              <dt>Current Role</dt>
+              <dd>ICT Service Centre Analyst, QPS</dd>
+              <dt>Focus</dt>
+              <dd>Developer transition · Web &amp; systems</dd>
+            </dl>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section section--alt">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__num">02 / Projects</span>
+        <h2 class="section__title">Selected Work</h2>
+      </div>
+
+      <div class="projects">
+        <article class="project">
+          <div class="project__index">P / 01</div>
+          <div class="project__content">
+            <h3>Greenslopes Reconciliation Action Group Website</h3>
+            <p class="project__type">Team Project · Web Development</p>
+            <p>
+              Built a website honouring Aboriginal and Torres Strait Islander
+              heritage. Focused on accessible interfaces and curating
+              appropriate content to support reconciliation efforts.
+            </p>
+            <ul class="chips">
+              <li>HTML</li><li>CSS</li><li>Accessibility</li><li>Content Strategy</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__index">P / 02</div>
+          <div class="project__content">
+            <h3>IoT Water Monitoring System for Agricultural Irrigation</h3>
+            <p class="project__type">Individual Project · IoT &amp; Embedded Systems</p>
+            <p>
+              Built an IoT-based automated irrigation system using soil
+              moisture sensors with configurable thresholds. Designed a
+              monitoring interface that scales across field sizes.
+            </p>
+            <ul class="chips">
+              <li>IoT</li><li>Sensors</li><li>Automation</li><li>UI Design</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project project--placeholder">
+          <div class="project__index">P / 03</div>
+          <div class="project__content">
+            <h3>Next Project, Coming Soon</h3>
+            <p class="project__type">In Development · Full-Stack Web</p>
+            <p>
+              I'm currently building my next project as part of my developer
+              transition. Check back soon, or get in touch if you'd like to
+              collaborate.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__num">03 / Skills</span>
+        <h2 class="section__title">Skills &amp; Tech Stack</h2>
+      </div>
+
+      <div class="skills__grid">
+        <div class="skill-card skill-card--highlight">
+          <h3>Programming <span class="skill-card__tag">Focus</span></h3>
+          <ul class="chips">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Java</li><li>C</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Scripting &amp; Databases</h3>
+          <ul class="chips">
+            <li>PowerShell</li><li>MySQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Operating Systems &amp; Virtualisation</h3>
+          <ul class="chips">
+            <li>Windows 7</li><li>Windows 10</li><li>Windows 11</li><li>VMware</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>ITSM &amp; Endpoint Management</h3>
+          <ul class="chips">
+            <li>ServiceNow</li><li>Ivanti (VFire/BOSS)</li><li>SCCM</li><li>Microsoft Intune</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Networking</h3>
+          <ul class="chips">
+            <li>Switches</li><li>Routers</li><li>Firewalls</li><li>Network troubleshooting</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Soft Skills</h3>
+          <ul class="chips">
+            <li>Customer service</li><li>Stakeholder communication</li><li>Technical documentation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section section--alt">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__num">04 / Experience</span>
+        <h2 class="section__title">Work Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline__item">
+          <div class="timeline__date">Nov 2024 to Present</div>
+          <div class="timeline__body">
+            <h3>ICT Service Centre Analyst <span>· Tier 1 / Level 2</span></h3>
+            <p class="timeline__org">First Focus IT · Queensland Police Service</p>
+            <ul>
+              <li>Support QPS and Queensland Ambulance Service personnel on a 24/7 roster.</li>
+              <li>Triage and resolve escalated incidents across desktop, network, and application environments.</li>
+              <li>Run incidents and requests through ITIL workflows to keep SLAs on track.</li>
+              <li>Provide first-level support across hardware, software, network, and PSBA applications.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__date">Aug 2024 to Nov 2024</div>
+          <div class="timeline__body">
+            <h3>Service Desk Officer</h3>
+            <p class="timeline__org">Six Degrees Executive QLD · Dept. of Agriculture and Fisheries</p>
+            <ul>
+              <li>Supported executives, scientists, and field workers via Ivanti Service Manager and Amazon Connect.</li>
+              <li>Handled mobile device support for Apple and Android fleets through Microsoft Intune.</li>
+              <li>Resolved incidents while keeping stakeholders informed throughout each ticket.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__date">Mar 2022 to Jun 2024</div>
+          <div class="timeline__body">
+            <h3>Team Member <span>· Acting Supervisor</span></h3>
+            <p class="timeline__org">7-Eleven · Brisbane, Australia</p>
+            <ul>
+              <li>Acted as supervisor for two months, running a team of 15 in the store manager's absence.</li>
+              <li>Kept day-to-day operations running smoothly during a high-pressure period.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__date">Jul 2021 to Jan 2022</div>
+          <div class="timeline__body">
+            <h3>IT Support Technician</h3>
+            <p class="timeline__org">Cellarch Technologies · Bangalore, India</p>
+            <ul>
+              <li>Resolved hardware and software incidents using ServiceNow.</li>
+              <li>Performed Windows OS installations, mailbox migrations, and image processing.</li>
+              <li>Set up desktops, laptops, printers, and peripherals; contributed to release planning.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__num">05 / Education</span>
+        <h2 class="section__title">Education &amp; Certifications</h2>
+      </div>
+
+      <div class="education">
+        <article class="edu-item">
+          <div class="edu-item__year">2025</div>
+          <div class="edu-item__body">
+            <h3>Professional Year Program (IT)</h3>
+            <p>Education Centre of Australia (ECA)</p>
+          </div>
+        </article>
+
+        <article class="edu-item">
+          <div class="edu-item__year">2023</div>
+          <div class="edu-item__body">
+            <h3>Master of Information Technology, Data Analytics</h3>
+            <p>Griffith University, Australia</p>
+          </div>
+        </article>
+
+        <article class="edu-item">
+          <div class="edu-item__year">2021</div>
+          <div class="edu-item__body">
+            <h3>Bachelor of Technology, Computer Science &amp; Engineering</h3>
+            <p>B.V. Raju Institute of Technology, India</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section section--contact">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__num">06 / Contact</span>
+        <h2 class="section__title">Get in Touch</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info">
+          <p class="contact__lead">
+            I'm open to developer opportunities: junior, graduate, and
+            associate software engineering roles. Let's talk.
+          </p>
+
+          <ul class="contact__links">
+            <li>
+              <span class="contact__label">Email</span>
+              <a href="mailto:Kothakapureddy1999@gmail.com">Kothakapureddy1999@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact__label">LinkedIn</span>
+              <a href="https://linkedin.com/in/kscr" target="_blank" rel="noopener">linkedin.com/in/kscr</a>
+            </li>
+            <li>
+              <span class="contact__label">Resume</span>
+              <a href="resume.pdf" download>Download PDF</a>
+            </li>
+            <li>
+              <span class="contact__label">Location</span>
+              <span>Brisbane, Australia</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          <p class="form__note" id="formNote" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Kothakapu Sneha Chandana Reddy</p>
+      <p class="footer__note">Designed &amp; built with care · Brisbane, Australia</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
