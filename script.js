@@ -1,6 +1,6 @@
 /* ============================================
    PORTFOLIO — Sneha Chandana Reddy
-   JS: navigation, scroll effects, form, reveals,
+   JS: navigation, scroll effects, reveals,
        interactive effects (spotlight, tilt, magnetic)
    ============================================ */
 
@@ -194,40 +194,6 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.addEventListener('mouseleave', () => {
         btn.style.transform = '';
       });
-    });
-  }
-
-  /* ---------- Contact form handling ---------- */
-  const form = document.getElementById('contactForm');
-  const note = document.getElementById('formNote');
-
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = form.name.value.trim();
-      const email = form.email.value.trim();
-      const message = form.message.value.trim();
-
-      if (!name || !email || !message) {
-        note.textContent = '⚠ Please fill in your name, email, and message.';
-        note.style.color = '#f5a623';
-        return;
-      }
-
-      const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-      if (!emailOk) {
-        note.textContent = '⚠ Please enter a valid email address.';
-        note.style.color = '#f5a623';
-        return;
-      }
-
-      const subject = encodeURIComponent(form.subject.value || `Portfolio enquiry from ${name}`);
-      const body = encodeURIComponent(`Hi Sneha,\n\n${message}\n\nFrom, ${name}\n${email}`);
-      window.location.href = `mailto:Kothakapureddy1999@gmail.com?subject=${subject}&body=${body}`;
-
-      note.textContent = '✓ Opening your email app… thanks for getting in touch!';
-      note.style.color = '';
-      form.reset();
     });
   }
 
